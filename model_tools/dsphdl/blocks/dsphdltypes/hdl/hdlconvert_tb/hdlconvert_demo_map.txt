@@ -1,0 +1,2 @@
+ --> hdlconvert_demo_pkg
+hdlconvert_tb/hdlconvert_demo --> hdlconvert_demo
