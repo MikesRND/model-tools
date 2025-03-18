@@ -1,14 +1,21 @@
-%% Configure environment and define constants
+%% Testbench initialization script
+
+% Clean environment
 clearvars
 close all
 
+% Define component under test
 sys = 'TESTBENCH_NAME';
 dut = 'TESTBENCH_NAME/COMPONENT_NAME';
+
+% Open model project
+openModelProject('..');
 
 % System Clock and Period 
 Rsys = 1e6;
 Tsys = 1/Rsys;
 
+% Get internal component initialization structure
 ini = COMPONENT_NAME_init(Tsys);
 
 % Open Model
