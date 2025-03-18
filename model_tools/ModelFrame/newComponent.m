@@ -40,7 +40,7 @@ initFunc = createComponentInitScript(componentName, opts.style); % Create compon
 libName = createSimLibrary(componentName, initFunc, opts.style); % Model itself
 
 newfile = proj.addFolderIncludingChildFiles(modelDir);
-proj.addPath(modelDir)
+proj.addPath(modelDir);
 
 % Create testbench
 cd(testDir);
