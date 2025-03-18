@@ -19,7 +19,7 @@ try
             return
         else
             if forceClose
-                fprintf('Closing current project\n')l
+                fprintf('Closing current project\n')
                 closeProject(proj);
             else
                 % Ask user
