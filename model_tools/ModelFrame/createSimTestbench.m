@@ -18,7 +18,7 @@ add_block( [libName,'/',componentName], dut);
 set_param(dut, 'ShowName','on'); % show name
 set_param(dut, 'HideAutomaticName','off'); % show name
 add_block('simulink/Sources/Constant',   [testBenchName '/stim1']);
-set_param([testBenchName '/stim1'], 'Value', '100');
+set_param([testBenchName '/stim1'], 'Value', 'Tsim');
 set_param([testBenchName '/stim1'], 'SampleTime', 'Tsys');
 add_line(testBenchName,'stim1/1',  [componentName '/1'])
 add_block('simulink/Sinks/Scope', [testBenchName '/scope1']);
