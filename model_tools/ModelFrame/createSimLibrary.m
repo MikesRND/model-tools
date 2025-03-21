@@ -23,7 +23,7 @@ set_param([libBlock '/Out1'], 'Name', 'dout');
 
 % Add mask to block
 maskObj = Simulink.Mask.create(gcb);
-maskObj.addParameter('Type','edit','Prompt','System clock period','Name','Tsys','Value','Tsys','Container','tab1');
+maskObj.addParameter('Type','edit','Prompt','System clock period','Name','Tsys','Value','Tsys','Container','tab1','Tunable','off');
 %maskObj.Parameters(1).DialogControl.PromptLocation='Left';
 
 % Add block to subsystem to demonstrate using init params

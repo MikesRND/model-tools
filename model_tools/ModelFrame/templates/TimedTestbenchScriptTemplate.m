@@ -25,4 +25,12 @@ open_system(sys)
 Tsim = 10*Tsys;
 
 % Run Simulation
+fprintf('Running simulation...')
 simOut = sim(sys);
+fprintf('done.\n')
+
+% Validate Output
+[x, t] = getSimOutput(simOut,'Din');
+y = getSimOutput(simOut,'Dout');
+assert(all(x==y));
+fprintf('Model output validated\n')

@@ -15,7 +15,7 @@ try
     proj = currentProject();
     if ~isempty(proj)
         if strcmp(proj.RootFolder, projectFolder)
-            fprintf('Project already open\n')
+            % fprintf('Project already open\n')
             return
         else
             if forceClose
